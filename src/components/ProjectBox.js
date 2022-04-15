@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./Project";
+import styled from 'styled-components';
 
 const ProjectBox = ({projects, onProjectClick}) => {
 
@@ -9,11 +10,17 @@ const ProjectBox = ({projects, onProjectClick}) => {
         )
     });
 
+    const Box = styled.div`
+        display: flex;
+    `
+
     return (
-        <div className="project-box">
-            <h3>Projects</h3>
+        <>
+        <h3>Projects</h3>
+        <Box>   
             {ProjectNodes}
-        </div>
+        </Box>
+        </>
     )
 };
 
