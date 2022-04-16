@@ -10,12 +10,14 @@ const Portfolio = () => {
             {
                 id: 1,
                 title: "Misty Vets Python Project",
-                description: "A vet management app written in Python"
+                description: "A vet management app written in Python",
+                url: "https://github.com/thummingbird14/individual_python_project_misty_vets"
             },
             {
                 id: 2,
                 title: "Studio Ghibli app",
-                description: "A React app displaying data from the Studio Ghibli API"
+                description: "A React app displaying data from the Studio Ghibli API",
+                url: "https://github.com/thummingbird14/week_7_weekend_hw"
             }
         ]
     )
