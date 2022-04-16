@@ -25,14 +25,22 @@ const Portfolio = () => {
     const onProjectClick = function(project) {
         setSelectedProject(project);
     }
-
+    
+    const Page = styled.div`
+        background-color: #d494c1;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+    `
+    
     const About = styled.div`
         margin-left: 100px;
         margin-right: 100px
     `
 
     return (
-        <div>
+        <>
+        <Page>
         <About>
         <h1>Tanya Purcell</h1>
         <h2>Software Developer</h2>
@@ -41,7 +49,8 @@ const Portfolio = () => {
         </About>
         <ProjectBox projects={projects} onProjectClick={onProjectClick}/>
         {selectedProject ? <ProjectDetail project={selectedProject} /> : null}
-        </div>
+        </Page>
+        </>
     );
 }
 
