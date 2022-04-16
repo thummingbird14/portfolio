@@ -1,6 +1,7 @@
 import React , {useState} from "react";
 import ProjectBox from "../components/ProjectBox";
 import ProjectDetail from "../components/ProjectDetail";
+import styled from 'styled-components';
 
 const Portfolio = () => {
 
@@ -25,12 +26,19 @@ const Portfolio = () => {
         setSelectedProject(project);
     }
 
+    const About = styled.div`
+        margin-left: 100px;
+        margin-right: 100px
+    `
+
     return (
-        <div className="portfolio">
+        <div>
+        <About>
         <h1>Tanya Purcell</h1>
         <h2>Software Developer</h2>
         <p>I am a software developer based in Edinburgh. I am experienced in 
         Python, JavaScript and React.js</p>
+        </About>
         <ProjectBox projects={projects} onProjectClick={onProjectClick}/>
         {selectedProject ? <ProjectDetail project={selectedProject} /> : null}
         </div>

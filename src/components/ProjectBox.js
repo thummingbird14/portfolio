@@ -10,13 +10,20 @@ const ProjectBox = ({projects, onProjectClick}) => {
         )
     });
 
+    const Title = styled.div`
+        margin-left: 100px;
+        margin-right: 100px
+    `
     const Box = styled.div`
         display: flex;
+        justify-content: space-evenly;
     `
 
     return (
         <>
+        <Title>
         <h3>Projects</h3>
+        </Title>
         <Box>   
             {ProjectNodes}
         </Box>
