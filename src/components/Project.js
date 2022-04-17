@@ -11,7 +11,7 @@ const Project = ({project, onProjectClick}) => {
         width: 250px;
         background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
         border-radius: 8px;
-         border-style: none;
+        border-style: none;
         box-sizing: border-box;
         color: #FFFFFF;
         cursor: pointer;
