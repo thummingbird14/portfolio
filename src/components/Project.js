@@ -7,7 +7,7 @@ const Project = ({project, onProjectClick}) => {
         onProjectClick(project);
     }
     
-    const Button = styled.div`
+    const Button = styled.button`
         width: 250px;
         background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
         border-radius: 8px;
@@ -26,11 +26,9 @@ const Project = ({project, onProjectClick}) => {
     `
 
     return (
-        <div>
-        <Button>
-        <button onClick={handleClick}>{project.title}</button>
-        </Button>
-        </div>
+        <>
+        <Button onClick={handleClick}>{project.title}</Button>
+        </>
     
     )
 };
